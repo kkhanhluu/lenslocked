@@ -1,1 +1,86 @@
-<h1>Welcome to the sites</h1>
+{{template "header" .}}
+
+<main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Share your photography with the world</h1>
+                    <p>Create beautiful galleries, upload your best shots, and share them securely with anyone.</p>
+                    <div class="hero-buttons">
+                        <a href="/signup" class="btn btn-primary btn-lg">
+                            Get started
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round" class="icon">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+                        <a href="/explore" class="btn btn-outline btn-lg">Explore galleries</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="gallery-grid">
+                        <div class="gallery-item"></div>
+                        <div class="gallery-item"></div>
+                        <div class="gallery-item"></div>
+                        <div class="gallery-item"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>How it works</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                             class="icon">
+                            <rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect>
+                            <circle cx="9" cy="9" r="2"></circle>
+                            <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path>
+                        </svg>
+                    </div>
+                    <h3>Create Galleries</h3>
+                    <p>Organize your photos into beautiful galleries with custom titles and descriptions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                             class="icon">
+                            <rect width="18" height="22" x="3" y="1" rx="2" ry="2"></rect>
+                            <circle cx="12" cy="11" r="3"></circle>
+                            <path d="M12 18h.01"></path>
+                        </svg>
+                    </div>
+                    <h3>Private by Default</h3>
+                    <p>Your galleries remain private until you decide to publish and share them.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                             class="icon">
+                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                            <polyline points="16 6 12 2 8 6"></polyline>
+                            <line x1="12" x2="12" y1="2" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h3>Share Securely</h3>
+                    <p>Publish your galleries and share them with anyone using a secure URL.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</div>
+
+{{template "footer" .}}

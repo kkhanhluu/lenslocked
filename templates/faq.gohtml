@@ -1,0 +1,359 @@
+{{template "header" .}}
+
+
+<main class="main-content">
+    <div class="container">
+        <div class="faq-hero">
+            <h1>Frequently Asked Questions</h1>
+            <p class="faq-subtitle">Find answers to common questions about LensLocked</p>
+
+            <div class="search-container">
+                <div class="search-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.3-4.3"></path>
+                    </svg>
+                    <input type="text" placeholder="Search for answers..." class="search-input">
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-content">
+            <div class="faq-sidebar">
+                <div class="category-filter">
+                    <h3>Categories</h3>
+                    <ul class="category-list">
+                        <li class="category-item active">
+                            <button class="category-button" data-category="all">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z"></path>
+                                    <path d="m3 9 2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9"></path>
+                                    <path d="M12 3v6"></path>
+                                </svg>
+                                All Questions
+                                <span class="category-count">12</span>
+                            </button>
+                        </li>
+                        <li class="category-item">
+                            <button class="category-button" data-category="account">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                                Account
+                                <span class="category-count">3</span>
+                            </button>
+                        </li>
+                        <li class="category-item">
+                            <button class="category-button" data-category="galleries">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M3 3v18h18"></path>
+                                    <rect width="4" height="7" x="7" y="10" rx="1"></rect>
+                                    <rect width="4" height="12" x="15" y="5" rx="1"></rect>
+                                </svg>
+                                Galleries
+                                <span class="category-count">4</span>
+                            </button>
+                        </li>
+                        <li class="category-item">
+                            <button class="category-button" data-category="photos">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect>
+                                    <circle cx="9" cy="9" r="2"></circle>
+                                    <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path>
+                                </svg>
+                                Photos
+                                <span class="category-count">2</span>
+                            </button>
+                        </li>
+                        <li class="category-item">
+                            <button class="category-button" data-category="sharing">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                                    <polyline points="16 6 12 2 8 6"></polyline>
+                                    <line x1="12" x2="12" y1="2" y2="15"></line>
+                                </svg>
+                                Sharing
+                                <span class="category-count">2</span>
+                            </button>
+                        </li>
+                        <li class="category-item">
+                            <button class="category-button" data-category="billing">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="20" height="14" x="2" y="5" rx="2"></rect>
+                                    <line x1="2" x2="22" y1="10" y2="10"></line>
+                                </svg>
+                                Billing
+                                <span class="category-count">1</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="help-card">
+                    <div class="help-card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            <path d="M12 11v.01"></path>
+                            <path d="M8 11h8"></path>
+                        </svg>
+                    </div>
+                    <h3>Need more help?</h3>
+                    <p>Can't find what you're looking for? Contact our support team.</p>
+                    <a href="/contact" class="btn btn-primary btn-sm btn-block">Contact Support</a>
+                </div>
+            </div>
+
+            <div class="faq-main">
+                <div class="faq-accordion">
+                    <!-- Gallery Questions -->
+                    <div class="faq-category-section" id="galleries">
+                        <h2 class="faq-category-title">Gallery Management</h2>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span class="accordion-title">How do I create a new gallery?</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="accordion-icon">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="accordion-body">
+                                    <p>To create a new gallery, log in to your account and navigate to your dashboard. Click on the "New Gallery" button in the top right corner. Fill in the gallery title and description, then click "Create Gallery". You can then start uploading photos to your new gallery.</p>
+
+                                    <div class="steps-container">
+                                        <div class="step">
+                                            <div class="step-number">1</div>
+                                            <div class="step-content">
+                                                <h4>Log in to your account</h4>
+                                                <p>Navigate to your dashboard</p>
+                                            </div>
+                                        </div>
+                                        <div class="step">
+                                            <div class="step-number">2</div>
+                                            <div class="step-content">
+                                                <h4>Click "New Gallery" button</h4>
+                                                <p>Located in the top right corner</p>
+                                            </div>
+                                        </div>
+                                        <div class="step">
+                                            <div class="step-number">3</div>
+                                            <div class="step-content">
+                                                <h4>Fill in gallery details</h4>
+                                                <p>Add title and description</p>
+                                            </div>
+                                        </div>
+                                        <div class="step">
+                                            <div class="step-number">4</div>
+                                            <div class="step-content">
+                                                <h4>Start uploading photos</h4>
+                                                <p>Add photos to your new gallery</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photos Questions -->
+                    <div class="faq-category-section" id="photos">
+                        <h2 class="faq-category-title">Photos & Uploads</h2>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span class="accordion-title">What file formats are supported for photo uploads?</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="accordion-icon">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="accordion-body">
+                                    <p>LensLocked supports the following image formats:</p>
+
+                                    <div class="format-grid">
+                                        <div class="format-item">
+                                            <div class="format-icon jpg">JPG</div>
+                                            <div class="format-info">
+                                                <h4>JPEG (.jpg, .jpeg)</h4>
+                                                <p>Best for photographs</p>
+                                            </div>
+                                        </div>
+                                        <div class="format-item">
+                                            <div class="format-icon png">PNG</div>
+                                            <div class="format-info">
+                                                <h4>PNG (.png)</h4>
+                                                <p>Best for graphics with transparency</p>
+                                            </div>
+                                        </div>
+                                        <div class="format-item">
+                                            <div class="format-icon gif">GIF</div>
+                                            <div class="format-info">
+                                                <h4>GIF (.gif)</h4>
+                                                <p>Supports simple animations</p>
+                                            </div>
+                                        </div>
+                                        <div class="format-item">
+                                            <div class="format-icon webp">WebP</div>
+                                            <div class="format-info">
+                                                <h4>WebP (.webp)</h4>
+                                                <p>Modern format with better compression</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="info-box">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="info-icon">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <path d="M12 16v-4"></path>
+                                            <path d="M12 8h.01"></path>
+                                        </svg>
+                                        <p>The maximum file size for each photo is 10MB.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span class="accordion-title">Is there a limit to how many photos I can upload?</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="accordion-icon">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="accordion-body">
+                                    <p>Yes, there are limits based on your account type:</p>
+
+                                    <div class="plan-comparison">
+                                        <div class="plan-card">
+                                            <div class="plan-header">
+                                                <h4>Free Account</h4>
+                                            </div>
+                                            <ul class="plan-features">
+                                                <li>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                    Up to 50 photos per gallery
+                                                </li>
+                                                <li>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                    Maximum of 5 galleries
+                                                </li>
+                                                <li>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                    10MB maximum file size
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="plan-card premium">
+                                            <div class="plan-header">
+                                                <h4>Premium Account</h4>
+                                            </div>
+                                            <ul class="plan-features">
+                                                <li>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                    Up to 500 photos per gallery
+                                                </li>
+                                                <li>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                    Unlimited galleries
+                                                </li>
+                                                <li>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M20 6 9 17l-5-5"></path>
+                                                    </svg>
+                                                    20MB maximum file size
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="cta-container">
+                                        <a href="/pricing" class="btn btn-outline">View Pricing Plans</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sharing Questions -->
+                    <div class="faq-category-section" id="sharing">
+                        <h2 class="faq-category-title">Sharing & Privacy</h2>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span class="accordion-title">How do I share my gallery with others?</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="accordion-icon">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="accordion-body">
+                                    <p>To share your gallery, you first need to publish it. Go to your gallery's edit page and toggle the "Published" switch. Once published, you can share your gallery by:</p>
+
+                                    <ol class="numbered-list">
+                                        <li>Clicking the "View" button to open the public gallery view</li>
+                                        <li>Using the "Share" button in the top right corner of the public gallery page</li>
+                                        <li>Copying the URL from your browser's address bar and sending it to others</li>
+                                    </ol>
+
+                                    <div class="info-box warning">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="info-icon">
+                                            <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                                            <line x1="12" y1="9" x2="12" y2="13"></line>
+                                            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                                        </svg>
+                                        <p>Only published galleries can be viewed by people who have the link. Unpublished galleries are private and only visible to you.</p>
+                                    </div>
+
+                                    <div class="image-guide">
+                                        <img src="https://via.placeholder.com/600x300" alt="Gallery sharing interface" class="guide-image">
+                                        <div class="image-caption">The gallery sharing interface with the publish toggle and share button highlighted</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-footer">
+                    <div class="feedback-section">
+                        <h3>Was this helpful?</h3>
+                        <div class="feedback-buttons">
+                            <button class="btn btn-sm btn-outline feedback-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                                </svg>
+                                Yes
+                            </button>
+                            <button class="btn btn-sm btn-outline feedback-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path>
+                                </svg>
+                                No
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="contact-prompt">
+                        <p>Still have questions? <a href="/contact" class="text-link">Contact our support team</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+</div>
+
+{{template "footer" .}}

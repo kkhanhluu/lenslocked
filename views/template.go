@@ -10,12 +10,19 @@ type Template struct {
 	htmlTpl *template.Template
 }
 
-func Parse(filePath string) (Template, error) {
-	tpl, err := template.ParseFiles(filePath)
+func Parse(filePath ...string) (Template, error) {
+	tpl, err := template.ParseFiles(filePath...)
 	if err != nil {
 		return Template{}, fmt.Errorf("failed to parse template: %w", err)
 	}
 	return Template{htmlTpl: tpl}, nil
+}
+
+func Must(tpl Template, err error) Template {
+	if err != nil {
+		panic(err)
+	}
+	return tpl
 }
 
 func (t Template) Execute(w http.ResponseWriter, data interface{}) {
